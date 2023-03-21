@@ -1,0 +1,338 @@
+* body{
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+   width:100%;
+   height: 100%;
+}
+
+.header-img{
+    width: 100%;
+    height: 250px;
+}
+
+.wrap{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: -10px;
+    height: 100px;
+    background-color: black; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.navbar li a {
+    color:white;
+    font-size: 26px;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 15px;
+    margin-left: 30px;
+}
+
+.navbar li a.home{
+    margin-left: -2px;
+}
+
+.navbar li a:hover{
+    background-color: #333;
+    transition: all .1s ease-in;
+    /* border-radius: 10px; */
+}
+
+.dropdown {
+    float:left;
+    overflow: hidden;
+}
+.dropdown .dropbtn { /* akan aktif kalo ada drop btn di dalem */
+    /* class dalam class */
+    /* font-size: 16px; */
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* margin:0; */
+}
+.navbar a:hover, .dropdown:hover , .dropbtn {background-color: black;}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 135px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1
+}
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 26px;
+}
+.dropdown-content a:hover {
+    background-color:crimson;
+    font-size: 26px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.search {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 1300px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+  }
+
+.search:active {
+    transform: scale(0.95);
+  }
+
+.icon {
+    width: 40px;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    margin-left: 40px;
+    height: 20px;
+    padding: 10px;
+    pointer-events: none;
+}
+
+.sebelum{
+    display: flex;
+    height: 80px;
+    background-color: black;
+    margin: 50px 50px;
+    border-radius: 20px;
+    list-style: none;
+}
+
+.sebelum .satu{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    text-decoration: none;
+    background-color: crimson;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 40px;
+    font-size: 26px;
+}
+.sebelum .dropbtn{
+    margin: auto 0;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px ;
+    font-size: 26px;
+}
+
+/* .sebelum .season{
+    margin: auto 0;
+    text-decoration: none;
+    color: white;
+    margin-left: 30px ;
+    font-size: 26px;
+} */
+
+.content {
+    display: flex;
+    margin-top: 70px;
+    /* justify-content: space-between; */
+    /* align-content: space-between; */
+}
+.gambar{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.gambar img{
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.episode{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 26px;
+    /* margin-left: 80px;   
+    margin-bottom: 50px; */
+}
+
+.p1{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.p2{
+    margin-top: 170px;
+    margin-left: 50px;
+    /* margin: 50px */
+}
+
+.p3{
+    margin-top: 195px;
+    margin-left: 50px;
+}
+.p4{
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.p5{
+    margin-top: 180px;
+    margin-left: 50px;
+}
+
+.side{
+    margin-left: 200px;
+}
+
+.side-img{
+    display: flex;
+    margin-left: 150px;
+    width: 200px;  
+    align-items: center;
+    justify-content: center;
+}
+
+.caption {
+    margin-top: 50px;
+    color: white;
+    text-align:justify;
+    font-size: 20px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 26px;
+}
+
+.pagination {
+    display: flex;
+    /* position: relative; */
+    background:grey;
+    padding: 15px 30px; /* atas bawah kiri kanan */
+    list-style: none;
+    border-radius: 25px;
+    /* box-shadow: black; */
+    margin-left: 800px;
+    line-height: 40px;
+    width: 500px;
+    /* margin-right: 3850px; */
+    margin-top: 10px;
+}
+
+ul li.page {
+    list-style-type: none;
+    /* width: px; */
+    height: 0px;
+    line-height: 40px;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+ul li a.prev{
+    font-size: 26px;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-weight: 700;
+    /* margin-left: 30px; */
+    text-decoration: none;
+    color:white;
+}
+
+ul li a.angka {
+ /* display: block; */
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+ul li a.next{
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 40px;
+    /* margin-right: 20px; */
+    text-decoration: none;
+    color:white;   
+}
+
+ul li.page:hover a,
+ul li.page.active a {
+    background-color:#333;
+    color: white;
+    padding: 10px 10px;
+    transition: all .1s ease-in;
+    border-radius: 120px;
+}
+
+.prev:hover {
+    background-color: #333;
+    color: white;
+    padding: 10px 10px;
+    transition: all .1s ease-out;
+    border-radius: 20px;  
+}
+
+.next:hover {
+    background-color:#333;
+    color: white;
+    padding: 10px 10px;
+    transition: all .1s ease-in;
+    border-radius: 20px;  
+}
+footer{
+    background-color:rgb(38, 37, 37);
+    margin-top: 150px;
+    height: 100px;
+}
+footer p{
+    color: white;
+    padding-top: 30px;
+    margin-left: 900px;
+    font-weight: bold;
+    font-size: 26px;
+    /* background-color: aquamarine; */
+
+}
+
+
+
