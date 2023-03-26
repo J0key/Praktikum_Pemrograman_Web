@@ -1,0 +1,159 @@
+html {
+    height: 100%;
+}
+
+.konten {
+    border-radius: 15%;
+    
+}
+
+.images {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.tulisan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.judul {
+    font-size: large;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.bawah {
+    margin-top: 15px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.nama {
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.icon {
+    background-color: hsl(210, 46%, 95%);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.absolute {
+    visibility: hidden;
+    position: absolute;
+}
+
+.icon:hover~.absolute {
+    visibility: visible;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    right: -25%;
+    top: -50%;
+    padding: 15px 30px;
+    align-items: center;
+    display: flex;
+    box-shadow: 10px 20px 30px hsla(212, 23%, 69%, 0.289);
+    transition: 0.2s ease-in;
+}
+
+.absolute:hover {
+    visibility: visible;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    right: -25%;
+    top: -50%;
+    padding: 15px 30px;
+    align-items: center;
+    display: flex;
+    box-shadow: 10px 20px 30px hsla(212, 23%, 69%, 0.289);
+    transition: 0.2s ease-in;
+}
+
+.margin-10 {
+    margin-right: 15px;
+}
+
+@media all and (min-width: 1440px) {
+    body {
+        background-color: hsl(210, 46%, 95%);
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-size: 13px;
+        font-family: 'Manrope', sans-serif;
+    }
+
+    .konten {
+        display: flex;
+        width: 50%;
+        height: 35%;
+    }
+
+    .tulisan {
+        border-radius: 0px 15px 15px 0px;
+        padding: 40px;
+        letter-spacing: 0.025em;
+    }
+
+    .space-text {
+        letter-spacing: 3px;
+        color: white;
+    }
+}
+
+@media all and (max-width:1440px) {
+    body {
+        background-color: hsl(210, 46%, 95%);
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        font-family: 'Manrope', sans-serif;
+    }
+
+    .konten {
+        width: 300px;
+        margin: 0;
+        box-shadow: 10px 20px 30px hsla(212, 23%, 69%, 0.289);
+    }
+
+    .images {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+    .tulisan{
+        height: 100%;
+        padding: 35px;
+        border-radius: 0 0 10px 10px;
+    }
+}
